@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Carnet PUBLIC "CarnetId" "CarnetAttribute.dtd">
+<Carnet type="commun">
+	<contact nom="Le Bris" prenom="Yann" adresse="1 route de brest"  age="22" numero="06 95 46 55 65" >
+		<autre label="Hobby" valeur="Lecture"/>
+ 		<autre label="Plat" valeur="Cassoulet"/>
+	</contact>
+	<contact nom="Anchyse" prenom="Kilian" adresse="14 route des cerises"  age="21" numero="06 95 36 45 59" >
+		<autre label="Etudes" valeur="Info Bio"/>
+ 		<autre label="Ordinateur" valeur="Alienware"/>
+	</contact>
+	<contact nom="Barre" prenom="Samuel" adresse="3 rue des oranges"  age="21" numero="06 00 01 02 03" >
+	</contact>
+	<contact nom="Pech" prenom="Erwan" adresse="20 piste de Ski"  age="24" numero="07 05 36 46 73" >
+	</contact>
+</Carnet>

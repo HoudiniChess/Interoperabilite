@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated testEMF -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="testEMF.presentation.TestEMFModelWizardID"
+            name="%_UI_TestEMFModelWizard_label"
+            class="testEMF.presentation.TestEMFModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TestEMFModelFile.gif">
+         <description>%_UI_TestEMFModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated testEMF -->
+      <editor
+            id="testEMF.presentation.TestEMFEditorID"
+            name="%_UI_TestEMFEditor_label"
+            icon="icons/full/obj16/TestEMFModelFile.gif"
+            extensions="testemf"
+            class="testEMF.presentation.TestEMFEditor"
+            contributorClass="testEMF.presentation.TestEMFActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

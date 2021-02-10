@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/TestEMF/src-gen" creationIcons="false" editDirectory="/TestEMF.edit/src-gen"
+    editorDirectory="/TestEMF.editor/src-gen" modelPluginID="TestEMF" modelName="TestEMF"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>testEMF.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="TestEMF" disposableProviderFactory="true" ecorePackage="testEMF.ecore#/">
+    <genClasses ecoreClass="testEMF.ecore#//Truc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute testEMF.ecore#//Truc/n"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference testEMF.ecore#//Truc/chose"/>
+      <genOperations ecoreOperation="testEMF.ecore#//Truc/affiche">
+        <genParameters ecoreParameter="testEMF.ecore#//Truc/affiche/ch"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="testEMF.ecore#//Chose">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute testEMF.ecore#//Chose/nom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference testEMF.ecore#//Chose/trucs"/>
+    </genClasses>
+    <genClasses ecoreClass="testEMF.ecore#//root">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference testEMF.ecore#//root/chose"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference testEMF.ecore#//root/truc"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
